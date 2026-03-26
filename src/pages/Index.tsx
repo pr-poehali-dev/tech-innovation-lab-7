@@ -1,3 +1,7 @@
+const TEACHER_IMG = "https://cdn.poehali.dev/projects/978904af-65dc-47fa-bff8-8c83874bafd0/files/f2b02f95-19aa-4aaa-b2f6-3c70a7ee9f70.jpg";
+const READING_IMG = "https://cdn.poehali.dev/projects/978904af-65dc-47fa-bff8-8c83874bafd0/files/c752d146-ae06-487f-9c20-c370fedaf95f.jpg";
+const SPORT_IMG = "https://cdn.poehali.dev/projects/978904af-65dc-47fa-bff8-8c83874bafd0/files/f8190473-adf3-46e2-9420-d4a8a54b157c.jpg";
+
 export default function Index() {
   return (
     <>
@@ -38,7 +42,7 @@ export default function Index() {
               </a>
             </div>
           </div>
-          <div className="hero-img" style={{ background: "url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center center / cover" }}>
+          <div className="hero-img" style={{ backgroundImage: `url(${TEACHER_IMG})`, backgroundSize: "cover", backgroundPosition: "center top" }}>
             <div className="sticker">
               УРОК
               <br />
@@ -55,7 +59,7 @@ export default function Index() {
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * ЛЮБОВЬ К ЗНАНИЯМ * ИГРОВОЙ СПОРТ * ЛИТЕРАТУРНОЕ ЧТЕНИЕ * КАЖДЫЙ РЕБЁНОК ТАЛАНТЛИВ * РАЗВИТИЕ ЧЕРЕЗ ИГРУ * ЛЮБОВЬ К ЗНАНИЯМ * ИГРОВОЙ СПОРТ * ЛИТЕРАТУРНОЕ ЧТЕНИЕ * КАЖДЫЙ РЕБЁНОК ТАЛАНТЛИВ * РАЗВИТИЕ ЧЕРЕЗ ИГРУ
+            &nbsp; * ЛЮБОВЬ К ЗНАНИЯМ * ГЕРЕВЫЙ СПОРТ * ЛИТЕРАТУРНОЕ ЧТЕНИЕ * КАЖДЫЙ РЕБЁНОК ТАЛАНТЛИВ * РАЗВИТИЕ ЧЕРЕЗ ИГРУ * ЛЮБОВЬ К ЗНАНИЯМ * ГЕРЕВЫЙ СПОРТ * ЛИТЕРАТУРНОЕ ЧТЕНИЕ * КАЖДЫЙ РЕБЁНОК ТАЛАНТЛИВ * РАЗВИТИЕ ЧЕРЕЗ ИГРУ
           </div>
         </div>
 
@@ -68,42 +72,33 @@ export default function Index() {
           <div className="menu-grid">
             <div className="menu-card">
               <span className="menu-tag">Педагог</span>
-              <img
-                src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Учитель"
-              />
+              <img src={TEACHER_IMG} alt="Закурдаев Кирилл Романович" />
               <div className="menu-card-body">
                 <h3 style={{ marginBottom: "10px" }}>Кирилл Романович</h3>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Учитель начальных классов с горящим сердцем и неиссякаемой энергией. Верю, что каждый ребёнок — это целый мир, который нужно бережно открыть.
+                  Учитель начальных классов с горящим сердцем и неиссякаемой энергией. Верю, что каждый ребёнок — это целый мир, который нужно бережно открыть. Каждый день — возможность вдохновить!
                 </p>
               </div>
             </div>
 
             <div className="menu-card">
-              <span className="menu-tag" style={{ background: "var(--secondary)" }}>Игровой спорт</span>
-              <img
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Игровой спорт"
-              />
+              <span className="menu-tag" style={{ background: "var(--secondary)", color: "white" }}>Геревый спорт</span>
+              <img src={SPORT_IMG} alt="Геревый спорт" />
               <div className="menu-card-body">
-                <h3 style={{ marginBottom: "10px" }}>Увлечение — геревый спорт</h3>
+                <h3 style={{ marginBottom: "10px" }}>Увлекаюсь геревым спортом</h3>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Вне класса я активный спортсмен — занимаюсь геревым спортом. Командный дух, честная игра и воля к победе — те же ценности, которые я несу детям.
+                  Вне класса я активный спортсмен — геревый спорт даёт заряд энергии и учит работать в команде. Честная игра и воля к победе — ценности, которые я несу детям каждый день.
                 </p>
               </div>
             </div>
 
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>Читаем!</span>
-              <img
-                src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Литературное чтение"
-              />
+              <img src={READING_IMG} alt="Литературное чтение" />
               <div className="menu-card-body">
                 <h3 style={{ marginBottom: "10px" }}>Литературное чтение</h3>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Веду уроки литературного чтения — учу детей не просто читать слова, а чувствовать историю, сопереживать героям и открывать книгу как приключение.
+                  Веду уроки литературного чтения — учу детей не просто читать слова, а чувствовать историю, сопереживать героям и открывать книгу как захватывающее приключение.
                 </p>
               </div>
             </div>
@@ -123,7 +118,7 @@ export default function Index() {
               </button>
             </a>
           </div>
-          <div className="vibe-img" style={{ background: "url('https://images.unsplash.com/photo-1546483875-ad9014c88eba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center center / cover" }}></div>
+          <div className="vibe-img" style={{ backgroundImage: `url(${SPORT_IMG})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
         </section>
 
         {/* Уроки */}
@@ -136,28 +131,16 @@ export default function Index() {
           </p>
           <div className="social-grid">
             <div className="social-item">
-              <img
-                src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Книги"
-              />
+              <img src={READING_IMG} alt="Дети читают" />
             </div>
             <div className="social-item">
-              <img
-                src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Чтение"
-              />
+              <img src={TEACHER_IMG} alt="Учитель" />
             </div>
             <div className="social-item">
-              <img
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Урок"
-              />
+              <img src={SPORT_IMG} alt="Геревый спорт" />
             </div>
             <div className="social-item">
-              <img
-                src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Начальная школа"
-              />
+              <img src={READING_IMG} alt="Литературное чтение" />
             </div>
           </div>
         </section>
@@ -167,7 +150,7 @@ export default function Index() {
         <div>
           <div className="footer-logo">К*ЗАКУРДАЕВ</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Закурдаев Кирилл Романович — учитель начальных классов. Литературное чтение, игровой спорт и настоящая любовь к детям.
+            Закурдаев Кирилл Романович — учитель начальных классов. Литературное чтение, геревый спорт и настоящая любовь к детям.
           </p>
         </div>
         <div className="footer-links">
